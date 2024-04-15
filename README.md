@@ -8,5 +8,6 @@ The performance of an XGBoost model was studied to analyze its capacity to handl
 
 A modification to the XGBoost training algorithm was done to include balanced bootstrapping, in order to analyze its effect on imbalanced classification. This modification was made specifically on the train.py module of the python-package.
 A parameter was added to the train method to include, when said parameter is True, a proccess of balanced bootstrapping to the algorithm. The code for this modification can be found in the modification.py file.
+(Note: The method crashes if using this parameter set to True while using device set as cuda)
 
 A Balanced Random Forest model was used for benchmarking since it is the model described by ALeRCE in the aforementioned paper.
